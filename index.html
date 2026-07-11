@@ -154,22 +154,23 @@
     .contact-grid{grid-template-columns:1fr;gap:32px}
     .svc-grid{grid-template-columns:1fr 1fr}
     .rev-grid{grid-template-columns:1fr}
-  }
-  @media(max-width:680px){
-    section{padding:54px 0}
+    /* Tablet + phone: switch header to hamburger menu */
     .nav-links{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--panel);border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(0,0,0,.4);display:none}
     .nav-links.open{display:flex}
     .nav-links a{padding:15px 24px;width:100%;border-top:1px solid var(--line)}
     .menu-btn{display:block}
     .nav-phone{display:none}
     .nav-right .btn{display:none}
-    .svc-grid{grid-template-columns:1fr}
-    .gallery{grid-template-columns:1fr}
     .callbar{display:block}
     body{padding-bottom:52px}
-    .hero-inner{padding:64px 0 58px}
     .hero-cta{flex-direction:column;align-items:stretch}
     .hero-cta .btn{width:100%}
+  }
+  @media(max-width:680px){
+    section{padding:54px 0}
+    .svc-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr}
+    .hero-inner{padding:64px 0 58px}
   }
 </style>
 </head>
