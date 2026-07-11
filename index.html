@@ -157,8 +157,8 @@
   }
   @media(max-width:680px){
     section{padding:54px 0}
-    .nav-links{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--panel);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s ease}
-    .nav-links.open{max-height:320px}
+    .nav-links{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--panel);border-bottom:1px solid var(--line);box-shadow:0 14px 24px rgba(0,0,0,.4);display:none}
+    .nav-links.open{display:flex}
     .nav-links a{padding:15px 24px;width:100%;border-top:1px solid var(--line)}
     .menu-btn{display:block}
     .nav-phone{display:none}
@@ -380,8 +380,8 @@
 
 <script>
   document.getElementById('yr').textContent = new Date().getFullYear();
-  function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
-  function closeMenu(){document.getElementById('navLinks').classList.remove('open')}
+  function toggleMenu(){var n=document.getElementById('navLinks');n.style.display=n.classList.toggle('open')?'flex':''}
+  function closeMenu(){var n=document.getElementById('navLinks');n.classList.remove('open');n.style.display=''}
 </script>
 
 <!-- CMS content sync: applies edits published from the Agency Console.
