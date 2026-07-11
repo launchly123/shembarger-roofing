@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>A.L. Shembarger Roofing | Roofing in Berrien Center, MI</title>
+<meta name="description" content="A.L. Shembarger Roofing — local roofers in Berrien Center, Michigan. Roof replacement, repairs, storm damage, barns and outbuildings. Rated 5.0 on Google. Free estimates — call (269) 313-2161.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap"></noscript>
+<style>
+  :root{
+    --bg:#14171b;
+    --bg-2:#181c21;
+    --panel:#1c2127;
+    --line:rgba(255,255,255,.10);
+    --line-strong:rgba(255,255,255,.18);
+    --text:#eceef1;
+    --muted:#a7adb6;
+    --red:#c23127;
+    --red-2:#9c231b;
+    --gold:#f2b431;
+    --max:1140px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Source Sans 3',system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  h1,h2,h3{font-family:'Oswald',sans-serif;font-weight:600;line-height:1.12;letter-spacing:.2px}
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+  .wrap{width:100%;max-width:var(--max);margin:0 auto;padding:0 24px}
+  section{padding:78px 0}
+  .section-head{max-width:640px;margin-bottom:40px}
+  .section-head h2{font-size:clamp(27px,4.4vw,40px);margin-bottom:12px}
+  .section-head p{color:var(--muted);font-size:16.5px}
+  .kicker{font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--red);margin-bottom:12px;display:flex;align-items:center;gap:9px}
+  .kicker::before{content:"";width:26px;height:2px;background:var(--red);display:inline-block}
+
+  /* Buttons */
+  .btn{display:inline-flex;align-items:center;gap:9px;justify-content:center;font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:15.5px;padding:14px 24px;border-radius:5px;cursor:pointer;border:1px solid transparent;transition:background .15s ease,border-color .15s ease}
+  .btn svg{width:17px;height:17px;flex:none}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-red:hover{background:var(--red-2)}
+  .btn-outline{background:transparent;color:var(--text);border-color:var(--line-strong)}
+  .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.04)}
+  .btn-lg{padding:16px 30px;font-size:16.5px}
+
+  /* Header */
+  header{position:sticky;top:0;z-index:60;background:rgba(20,23,27,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:76px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand .mark{width:44px;height:44px;flex:none;border-radius:6px;background:var(--red);display:grid;place-items:center}
+  .brand .mark svg{width:26px;height:26px}
+  .brand .bt b{font-family:'Oswald',sans-serif;font-weight:600;font-size:19px;letter-spacing:.4px;line-height:1;display:block;text-transform:uppercase}
+  .brand .bt span{display:block;font-size:11px;letter-spacing:2.5px;color:var(--muted);margin-top:3px;text-transform:uppercase}
+  .nav-links{display:flex;align-items:center;gap:28px}
+  .nav-links a{font-size:15px;color:var(--muted);font-weight:600;transition:color .15s}
+  .nav-links a:hover{color:var(--text)}
+  .nav-right{display:flex;align-items:center;gap:18px}
+  .nav-phone{display:flex;align-items:center;gap:8px;font-family:'Oswald',sans-serif;font-size:19px;font-weight:600;color:#fff;letter-spacing:.5px}
+  .nav-phone svg{width:17px;height:17px;color:var(--red)}
+  .menu-btn{display:none;background:none;border:1px solid var(--line-strong);border-radius:5px;padding:9px 11px;cursor:pointer}
+  .menu-btn span{display:block;width:20px;height:2px;background:var(--text);margin:4px 0;border-radius:2px}
+
+  /* Hero */
+  .hero{position:relative;overflow:hidden;border-bottom:1px solid var(--line)}
+  .hero-bg{position:absolute;inset:0;z-index:0;background-image:url('images/hero.jpg');background-size:cover;background-position:center 42%}
+  .hero-scrim{position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(15,17,20,.94) 0%,rgba(15,17,20,.8) 42%,rgba(15,17,20,.45) 100%)}
+  .hero-inner{position:relative;z-index:2;max-width:660px;padding:96px 0 88px}
+  .rating-line{display:flex;align-items:center;gap:10px;margin-bottom:22px;font-size:15px;color:#d9dce1}
+  .rating-line .stars{color:var(--gold);letter-spacing:2px;font-size:16px}
+  .rating-line .sep{color:var(--muted)}
+  .hero h1{font-size:clamp(36px,6vw,60px);margin-bottom:20px;font-weight:700}
+  .hero h1 .u{color:var(--red)}
+  .hero p{font-size:clamp(16.5px,2vw,19px);color:#d3d7dd;margin-bottom:32px;max-width:560px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-note{margin-top:20px;font-size:14.5px;color:#b9bec6}
+
+  /* Trust bar */
+  .trustbar{background:var(--bg-2);border-bottom:1px solid var(--line)}
+  .trustbar .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 30px;padding:22px 24px}
+  .tb-item{display:flex;align-items:center;gap:11px;font-size:15px;color:#d6d9de;font-weight:600}
+  .tb-item svg{width:20px;height:20px;color:var(--red);flex:none}
+  .tb-item .stars{color:var(--gold);letter-spacing:1px;font-size:14px}
+
+  /* Services */
+  .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+  .svc{background:var(--bg);padding:32px 28px;transition:background .15s}
+  .svc:hover{background:var(--panel)}
+  .svc .ic{width:44px;height:44px;margin-bottom:18px;color:var(--red)}
+  .svc .ic svg{width:44px;height:44px;stroke:var(--red);fill:none}
+  .svc h3{font-size:21px;margin-bottom:9px;font-weight:600}
+  .svc p{color:var(--muted);font-size:15px}
+
+  /* Split */
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+  .split .ph{border-radius:8px;overflow:hidden;border:1px solid var(--line)}
+  .split .ph img{width:100%;height:100%;object-fit:cover}
+  .checklist{list-style:none;margin:24px 0 0;display:flex;flex-direction:column;gap:16px}
+  .checklist li{display:flex;gap:13px;align-items:flex-start;font-size:15.5px;color:#d6d9de}
+  .checklist svg{width:22px;height:22px;color:var(--red);flex:none;margin-top:1px}
+  .checklist b{color:#fff;font-weight:700}
+
+  /* Gallery */
+  .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+  .shot{position:relative;aspect-ratio:3/2;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#0f1013}
+  .shot img{width:100%;height:100%;object-fit:cover;transition:transform .5s ease}
+  .shot:hover img{transform:scale(1.04)}
+  .shot .cap{position:absolute;left:15px;bottom:13px;z-index:3;font-size:14px;font-weight:700;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.9)}
+  .shot::after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(180deg,transparent 58%,rgba(0,0,0,.6))}
+
+  /* Reviews */
+  .reviews{background:var(--bg-2)}
+  .rev-top{display:flex;align-items:center;gap:16px;margin-bottom:36px;flex-wrap:wrap}
+  .rev-badge{display:flex;align-items:center;gap:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:14px 20px}
+  .rev-badge .num{font-family:'Oswald',sans-serif;font-size:34px;font-weight:700;line-height:1}
+  .rev-badge .stars{color:var(--gold);letter-spacing:1px;font-size:15px}
+  .rev-badge small{color:var(--muted);font-size:13px}
+  .rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .review{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:26px}
+  .review .stars{color:var(--gold);letter-spacing:1px;font-size:15px;margin-bottom:12px}
+  .review p{font-size:15.5px;color:#dbdee3;margin-bottom:16px}
+  .review .who{display:flex;align-items:center;gap:12px}
+  .review .av{width:40px;height:40px;border-radius:50%;flex:none;display:grid;place-items:center;font-family:'Oswald',sans-serif;font-weight:600;color:#fff;background:var(--red)}
+  .review .who b{font-size:15px}
+  .review .who span{display:block;font-size:12.5px;color:var(--muted)}
+
+  /* Contact */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:44px}
+  .contact-info{list-style:none;display:flex;flex-direction:column;gap:22px}
+  .contact-info li{display:flex;gap:14px;align-items:flex-start}
+  .contact-info svg{width:22px;height:22px;color:var(--red);flex:none;margin-top:3px}
+  .contact-info b{display:block;font-size:15.5px;margin-bottom:2px;font-weight:700}
+  .contact-info p{color:var(--muted);font-size:15px}
+  .contact-info a.phone{font-family:'Oswald',sans-serif;font-size:26px;font-weight:600;color:#fff;letter-spacing:.5px}
+  .contact-card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:32px}
+  .contact-card h3{font-size:23px;margin-bottom:10px}
+  .contact-card p{color:var(--muted);font-size:15px;margin-bottom:22px}
+  .open-dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#4ea86a;margin-right:6px}
+
+  /* Footer */
+  footer{background:#0f1216;border-top:1px solid var(--line);padding:40px 0}
+  .foot{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+  .foot .muted{color:var(--muted);font-size:14px}
+
+  /* Mobile call bar */
+  .callbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:70;background:var(--red);padding:0}
+  .callbar a{display:flex;align-items:center;justify-content:center;gap:9px;padding:15px;color:#fff;font-family:'Oswald',sans-serif;font-size:18px;font-weight:600;letter-spacing:.5px}
+  .callbar svg{width:18px;height:18px}
+
+  @media(max-width:900px){
+    .split{grid-template-columns:1fr;gap:30px}
+    .contact-grid{grid-template-columns:1fr;gap:32px}
+    .svc-grid{grid-template-columns:1fr 1fr}
+    .rev-grid{grid-template-columns:1fr}
+  }
+  @media(max-width:680px){
+    section{padding:54px 0}
+    .nav-links{position:absolute;top:76px;left:0;right:0;flex-direction:column;gap:0;background:var(--panel);border-bottom:1px solid var(--line);max-height:0;overflow:hidden;transition:max-height .3s ease}
+    .nav-links.open{max-height:320px}
+    .nav-links a{padding:15px 24px;width:100%;border-top:1px solid var(--line)}
+    .menu-btn{display:block}
+    .nav-phone{display:none}
+    .svc-grid{grid-template-columns:1fr}
+    .gallery{grid-template-columns:1fr}
+    .callbar{display:block}
+    body{padding-bottom:52px}
+    .hero-inner{padding:64px 0 58px}
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="wrap nav">
+    <a href="#top" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M2.5 12 12 4.2 21.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10.4V20h14v-9.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="bt"><b>A.L. Shembarger</b><span>Roofing</span></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#services" onclick="closeMenu()">Services</a>
+      <a href="#why" onclick="closeMenu()">About</a>
+      <a href="#work" onclick="closeMenu()">Our Work</a>
+      <a href="#reviews" onclick="closeMenu()">Reviews</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
+    </nav>
+    <div class="nav-right">
+      <a href="tel:+12693132161" class="nav-phone"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>(269) 313-2161</a>
+      <a href="#contact" class="btn btn-red">Free Estimate</a>
+      <button class="menu-btn" aria-label="Menu" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+<span id="top"></span>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-scrim"></div>
+  <div class="wrap hero-inner">
+    <div class="rating-line"><span class="stars">★★★★★</span> <span>Rated 5.0 on Google</span> <span class="sep">·</span> <span>Berrien Center, Michigan</span></div>
+    <h1>Local roofing you can<br><span class="u">actually trust.</span></h1>
+    <p>When you call A.L. Shembarger Roofing, you deal with Al himself — a fair, straight-talking roofer whose crew replaces and repairs roofs on homes, garages, and barns across Berrien County. Free estimates, most given the same day.</p>
+    <div class="hero-cta">
+      <a href="tel:+12693132161" class="btn btn-red btn-lg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>(269) 313-2161</a>
+      <a href="#contact" class="btn btn-outline btn-lg">Get a Free Estimate</a>
+    </div>
+    <p class="hero-note">Serving Berrien Center and all of Southwest Michigan.</p>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trustbar">
+  <div class="wrap">
+    <div class="tb-item"><span class="stars">★★★★★</span> Rated 5.0 on Google</div>
+    <div class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg> Free, no-pressure estimates</div>
+    <div class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5M5 10.5V20h14v-9.5"/></svg> Homes, garages &amp; barns</div>
+    <div class="tb-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg> Locally owned in Berrien Center</div>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What We Do</div>
+      <h2>Roofing work, done properly</h2>
+      <p>From a full tear-off to a leak that needs fixing before the next rain — Al and his crew handle it.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12 12 4.2 21.5 12M5 10.4V20h14v-9.6"/></svg></div>
+        <h3>Roof Replacement</h3>
+        <p>Old roof torn off, new one installed with quality shingles — and the job site left clean when we're done.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3 4 14h6l-1 7 9-11h-6l1-7Z"/></svg></div>
+        <h3>Storm Damage</h3>
+        <p>Wind or hail damage handled quickly, so a small problem doesn't turn into water inside your house.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14.5 3 21 9.5 10 20.5H4v-6L14.5 3Z"/><path d="M13 5.5 18.5 11"/></svg></div>
+        <h3>Roof Repair</h3>
+        <p>Leaks, missing shingles, worn flashing — the smaller fixes that keep a good roof going for years longer.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 20V9l9-5 9 5v11M3 20h18M9 20v-6h6v6"/></svg></div>
+        <h3>Barns &amp; Outbuildings</h3>
+        <p>Barns, pole buildings, garages and farm roofs — the bigger jobs a lot of roofers would rather pass on.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 21V7l8-4 8 4v14M9 21v-5h6v5M4 21h16"/></svg></div>
+        <h3>New Construction</h3>
+        <p>Building a home or an addition? We put clean, code-ready roofs on new work for builders and homeowners.</p>
+      </div>
+      <div class="svc">
+        <div class="ic"><svg viewBox="0 0 24 24" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
+        <h3>Free Inspections</h3>
+        <p>Not sure how much life is left in your roof? Al will take a look and tell you straight, no obligation.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT / WHY -->
+<section id="why" style="background:var(--bg-2)">
+  <div class="wrap split">
+    <div class="ph">
+      <img src="images/work-1.jpg" alt="A home with a finished roof by A.L. Shembarger Roofing">
+    </div>
+    <div>
+      <div class="kicker">About Al</div>
+      <h2 style="font-size:clamp(26px,4vw,38px);margin-bottom:14px">You deal with Al, from the first call to the last shingle</h2>
+      <p style="color:var(--muted);font-size:16px">There's no sales team and no runaround here. Al comes out, looks at your roof, tells you honestly what it needs, and gives you a fair price. Then his crew does the work and cleans up after. That's why folks around here say he's the only one to call.</p>
+      <ul class="checklist">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Fair, honest pricing</b> — you'll know the cost and the plan before we start.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>Same-day quotes</b> in most cases — call in the morning, hear back that day.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>A hard-working local crew</b> from right here in Berrien County.</div></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg><div><b>A perfect 5.0 rating</b> from homeowners who'd hire him again.</div></li>
+      </ul>
+      <a href="tel:+12693132161" class="btn btn-red" style="margin-top:28px">Call Al: (269) 313-2161</a>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Our Work</div>
+      <h2>Recent roofs around Southwest Michigan</h2>
+      <p>Real homes and barns, roofed by Al's crew.</p>
+    </div>
+    <div class="gallery">
+      <div class="shot"><img src="images/work-2.jpg" alt="Roof tear-off and re-decking on a brick home"><span class="cap">Tear-off &amp; replacement</span></div>
+      <div class="shot"><img src="images/work-4.jpg" alt="Crew working on a steep shingle roof"><span class="cap">Steep shingle roof</span></div>
+      <div class="shot"><img src="images/work-3.jpg" alt="Crew re-roofing a large barn"><span class="cap">Barn re-roof</span></div>
+      <div class="shot"><img src="images/work-1.jpg" alt="Finished roof on a large home"><span class="cap">Finished home</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="section-head" style="margin-bottom:28px">
+      <div class="kicker">Reviews</div>
+      <h2>What Al's customers say</h2>
+    </div>
+    <div class="rev-top">
+      <div class="rev-badge">
+        <div class="num">5.0</div>
+        <div><div class="stars">★★★★★</div><small>3 Google reviews</small></div>
+      </div>
+    </div>
+    <div class="rev-grid">
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Highly satisfied working with A.L. He came out to give us a quote the same day, and once we picked our shingle color someone dropped them right off at the house. Our garage roof looks great.</p>
+        <div class="who"><div class="av">N</div><div><b>Nicole</b><span>Garage roof replacement</span></div></div>
+      </div>
+      <div class="review">
+        <div class="stars">★★★★★</div>
+        <p>Our new roof looks great. Al told us exactly what his team would do and they worked hard the whole time. He's fair and honest — the only one to call when you need a new roof.</p>
+        <div class="who"><div class="av">C</div><div><b>Christine Schroeder</b><span>New roof</span></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Get In Touch</div>
+      <h2>Get a free estimate</h2>
+      <p>Give Al a call or a text. He'll come take a look and give you an honest price — no pressure.</p>
+    </div>
+    <div class="contact-grid">
+      <ul class="contact-info">
+        <li>
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>
+          <div><b>Call or Text</b><a href="tel:+12693132161" class="phone">(269) 313-2161</a></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a7 7 0 0 1 14 0c0 5.6-7 10-7 10Z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <div><b>Where We Are</b><p>9019 M-140, Berrien Center, MI 49102<br>Serving Berrien County &amp; Southwest Michigan</p></div>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          <div><b>Hours</b><p><span class="open-dot"></span>Opens 8:00 AM — call anytime and leave a message</p></div>
+        </li>
+      </ul>
+      <div class="contact-card">
+        <h3>Ready for a new roof?</h3>
+        <p>The fastest way to get started is a quick call. Al will set up a time to come out, look things over, and give you a straight answer.</p>
+        <a href="tel:+12693132161" class="btn btn-red btn-lg" style="width:100%"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>Call (269) 313-2161</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap foot">
+    <a href="#top" class="brand">
+      <span class="mark"><svg viewBox="0 0 24 24" fill="none"><path d="M2.5 12 12 4.2 21.5 12" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 10.4V20h14v-9.6" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      <span class="bt"><b>A.L. Shembarger</b><span>Roofing</span></span>
+    </a>
+    <div class="muted">© <span id="yr"></span> A.L. Shembarger Roofing · Berrien Center, MI · (269) 313-2161</div>
+  </div>
+</footer>
+
+<!-- MOBILE CALL BAR -->
+<div class="callbar">
+  <a href="tel:+12693132161"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.6 21 3 13.4 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.2.2 2.4.6 3.6.1.4 0 .8-.3 1l-2.2 2.2Z"/></svg>Call (269) 313-2161</a>
+</div>
+
+<script>
+  document.getElementById('yr').textContent = new Date().getFullYear();
+  function toggleMenu(){document.getElementById('navLinks').classList.toggle('open')}
+  function closeMenu(){document.getElementById('navLinks').classList.remove('open')}
+</script>
+
+<!-- CMS content sync: applies edits published from the Agency Console.
+     Position-keyed to match the CMS editor. Fails silently if the CMS is
+     unreachable, so the site always falls back to its built-in content. -->
+<script>
+(function () {
+  try {
+    var CMS = "https://cms-omega-seven.vercel.app";
+    var SLUG = "shembarger-roofing";
+    var SKIP = "header,nav,a,button,script,style,svg,select,textarea,input,form,iframe";
+    var overrides = null, mo = null;
+
+    function isTextLeaf(el) {
+      if (el.childElementCount !== 0) return false;
+      if (!(el.textContent || "").trim()) return false;
+      if (el.closest(SKIP)) return false;
+      return /^(H1|H2|H3|H4|H5|H6|P|LI|BLOCKQUOTE|FIGCAPTION|TD|TH|SPAN|DIV|LABEL|EM|STRONG|SMALL|B|I)$/.test(el.tagName);
+    }
+
+    function apply() {
+      if (!overrides || !document.body) return;
+      if (mo) mo.disconnect();
+      try {
+        var all = document.body.getElementsByTagName("*");
+        var ti = 0, ii = 0;
+        for (var i = 0; i < all.length; i++) {
+          var el = all[i];
+          if (el.tagName === "IMG") {
+            if (el.closest("header,nav")) continue;
+            var ik = "i" + (ii++);
+            if (overrides[ik]) el.src = overrides[ik];
+          } else if (isTextLeaf(el)) {
+            var tk = "t" + (ti++);
+            if (overrides[tk] != null) el.textContent = overrides[tk];
+          }
+        }
+      } finally {
+        if (mo) mo.observe(document.body, { childList: true, subtree: true });
+      }
+    }
+
+    fetch(CMS + "/api/public/overrides/" + SLUG)
+      .then(function (r) { return r.json(); })
+      .then(function (d) {
+        overrides = (d && d.overrides) || {};
+        if (!Object.keys(overrides).length) return;
+        mo = new MutationObserver(function () {
+          clearTimeout(mo._t); mo._t = setTimeout(apply, 120);
+        });
+        apply();
+      })
+      .catch(function () {});
+  } catch (e) {}
+})();
+</script>
+</body>
+</html>
